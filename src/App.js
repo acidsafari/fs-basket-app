@@ -11,15 +11,15 @@ import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <div className="App">
-        <Navigation />
-        <Header />
-        <div className='MainAside'>
-          <News />
-          <Subscribe />
-        </div>
-        <Main />
-        <ResourceHub />
-        <Footer />
+      <Navigation />
+      <Header />
+      <div className='MainAside'>
+        <News />
+        <Subscribe />
+      </div>
+      <Main />
+      <ResourceHub />
+      <Footer />
     </div>
   );
 }
