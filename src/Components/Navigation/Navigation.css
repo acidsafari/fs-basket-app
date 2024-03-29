@@ -22,12 +22,7 @@ body {
     text-align: center;
     font-family: 'Scribble Box', monospace;
     /*
-    box-align: middle;
-    position: fixed;
-    top: 0;
     z-index: 999;
-    flex-direction: row;
-    flex: 2;
     */
 }
 
@@ -55,7 +50,9 @@ ul.NavigationMenus li a {
     text-decoration: none;
 }
 
-
+ul.NavigationMenus li a:hover{
+    color: rgb(255, 255, 255);
+}
   
 .SearchBar {
     align-items: center;
@@ -63,44 +60,13 @@ ul.NavigationMenus li a {
     position: relative;
     padding-bottom: 5px;
 }
-  
 
-  
-ul.NavigationMenus li a:after {
-    content: "";
-    display: block;
-    position: absolute;
-    background: #fff;
-    height: 1px;
-    width: 0%;
-    bottom: 0;
-    transition: 0.3s;
-    margin: 0px auto;
-    left: 0;
-    right: 0;
+.SearchBarContainer form {
+    padding: 10px;
+    margin: 0;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
-  
-ul.NavigationMenus li a:hover:after{
-    width: 100%;
-    transition: 0.3s;
-}
-  
-.activeNavItem a:after{
-    content: "";
-    display: block;
-    position: absolute;
-    background: #fff;
-    height: 1px;
-    width: 100% !important;
-    bottom: 0;
-    transition: 0.3s;
-    margin: 0px auto;
-    left: 0;
-    right: 0;
-    color:hotpink !important;
-}
-  
-li.activeNavItem a:after{
-    background: #f2f2f270!important;
-} 
-  
