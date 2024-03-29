@@ -6,12 +6,16 @@ const SearchBar = () => {
 
     return (
         <div className='SearchBarContainer'>
+            <form method='get'>
             <input 
-                type='text'
+                type='search'
+                name='query'
                 className='SearchBarInput'
                 onChange={(e) => setSearchInput(e.target.value)}
                 placeholder='Search...'
             />
+            <input type="submit" value="Search" />
+            </form>
         </div>
     )
 }

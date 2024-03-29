@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import SearchBar from "./SearchBar.js";
+import "./Navigation.css";
 
 const Navigation = () => {
   const [selectedNavItem, setSelectedNavItem] = useState("welcome");
   const navItems = [
     { id: 1, title: "News", name: "News" },
-    { id: 2, title: "Let's Play", name: "LetsPlay" },
+    { id: 2, title: "Let's Play!", name: "LetsPlay" },
     { id: 3, title: "Competitions", name: "Competitions" },
     { id: 4, title: "Programs", name: "Programs" },
     { id: 5, title: "Get Involved", name: "GetInvolved" },
@@ -24,7 +25,7 @@ const Navigation = () => {
               onClick={() => setSelectedNavItem(item.name)}
               className={selectedNavItem === item.name ? `activeNavItem` : ""}
             >
-              <a href={`#${item.name}`}>{item.title}</a>
+              <a href={`/${item.name}`}>{item.title}</a>
             </li>
           );
         })}
