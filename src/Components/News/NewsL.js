@@ -4,7 +4,11 @@ import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import HighPerformanceCamp from './HighPerformanceCamp.jpg';
+import fig1NationalsVicResults from './fig1NationalsVicResults.jpg';
+import fig2WomenSelected from './fig2WomenSelected.jpg';
+import fig4RollersEuroTour from './fig4RollersEuroTour.webp';
 
+// WOULD BE NICE TO MAKE THIS A FUNCTION THAT TAKES A LIST OF INPUTS
 
 function NewsL() {
 
@@ -19,89 +23,49 @@ function NewsL() {
       <div className="CarouselContainer">
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
-          <img src={HighPerformanceCamp} 
+          <img src={fig1NationalsVicResults} 
+            alt='Nationals Vic Results'
             style={{ width: '600px', height:'400px' }}/>
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Clean Sweep At Nationals!</h3>
+            <a href='https://www.basketballvictoria.com.au/news/victorias-clean-sweep-at-nationals'>
+              Results</a>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={HighPerformanceCamp} 
+          <img src={fig2WomenSelected} 
+            alt='Women Selected'
             style={{ width: '600px', height:'400px' }}/>
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
+            <h3>Victorians selected</h3>
+            <a href="https://www.basketballvictoria.com.au/news/victorians-selected" >
+              SHE HOOPS News</a>
+            </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img src={HighPerformanceCamp} 
+            alt="National Performance Camp 2024"
             style={{ width: '600px', height:'400px' }}/>
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3>National Performance Camp 2024</h3>
+            <a href="https://www.basketballvictoria.com.au/news/national-performance-camp-2024" 
+              >Check what went down</a>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={fig4RollersEuroTour} 
+            alt="Rollers Ready For European Tour"
+            style={{ width: '600px', height:'400px' }}/>
+          <Carousel.Caption>
+            <h3>Rollers Ready For European Tour</h3>
+            <a href="https://www.australia.basketball/news/3339914/rollers-ready-for-european-tour" 
+              >Roll with them here</a>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
       </div>
-      
     </div>
   );
 }
-
-//export default ControlledCarousel;
-
-/*
-const News = () => {
- 
-  return (
-    <div className="News">
-      <h1>NEWS</h1>
-      <div className="carousel-container">
-        <div className="carousel">
-          <img src="assets/nationals-vic-results.jpg" 
-            alt="Clean Sweep At Nationals!" 
-            style="width: 100%;" />
-        <div className="news-heading">
-          <a href="https://www.basketballvictoria.com.au/news/victorias-clean-sweep-at-nationals" 
-            class="link">Clean Sweep At Nationals!</a>
-        </div>
-      </div>    
-      <div className="carousel">
-        <img src="assets/women-selected.jpg" 
-          alt="Victorians Selected"
-          style="width: 100%;" />
-        <div className="news-heading">
-          <a href="https://www.basketballvictoria.com.au/news/victorias-clean-sweep-at-nationals" 
-            class="link">Victorians Selected</a>
-        </div>
-      </div>
-      <div className="carousel">
-        <img src="assets/high-performance-camp.jpg" 
-          alt="National Performance Camp 2024"
-          style="width: 100%;" />
-        <div className="news-heading">
-          <a href="https://www.basketballvictoria.com.au/news/national-performance-camp-2024" 
-            class="link">National Performance Camp 2024</a>
-        </div>    
-      </div> 
-      <div className="carousel">
-        <img src="assets/rollers-euro-tour.webp" 
-          alt="Rollers Ready For European Tour"
-          style="width: 100%;" />
-        <div class="news-heading">
-          <a href="https://www.australia.basketball/news/3339914/rollers-ready-for-european-tour" 
-            class="link">Rollers Ready For European Tour</a>
-        </div> 
-      </div> 
-        <a class="back" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-    </div>
-  );
-};
-*/
 
 export default NewsL;

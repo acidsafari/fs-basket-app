@@ -1,3 +1,5 @@
+// DEPRECATED ATTEMP
+
 import plusSlides from './Components/utils/plusSlides';
 import currentSlide from './Components/utils/currentSlide';
 

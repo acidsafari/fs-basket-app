@@ -1,3 +1,5 @@
+// DEPRECATED ATTEMP
+
 import SlideShow from './Components/News/Caroussel';
 
 /* CAROUSEL CONFIG */

@@ -1,3 +1,6 @@
+// THIS CAROUSEL METHOD WAS ATTEMPTED BUT DID NOT WORK
+// DEPRECATED
+
 import React from 'react';
 import "./News.css";
 import Image from 'react-bootstrap/Image';
