@@ -7,7 +7,6 @@ import Subscribe from "./Components/Subscribe/Subscribe";
 import Main from "./Components/Main/Main";
 import ResourceHub from "./Components/ResourceHub/ResourceHub";
 import Footer from "./Components/Footer/Footer";
-import NewsL from './Components/News/NewsL';
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
       <Navigation />
       <Header />
       <div className='MainAside'>
-        <NewsL />
+        <News />
         <Subscribe />
       </div>
       <Main />
