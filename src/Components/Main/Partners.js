@@ -1,33 +1,67 @@
 import React from "react";
-import PhotoGallery from "../PhotoGallery/PhotoGallery.js";
+import "./Main";
 
-const PartnersList = [
-    {
-      "title": "Comp 1",
-      "location": "Location 1",
-      "photo": ""
-      //need to add the href the external link
-      // and the part to the function to output it too
-    },
-    {
-      "title": "Photo 2",
-      "location": "Location 2",
-      "photo": ""
-    },
-    {
-        "title": "Photo 3",
-        "location": "Location 3",
-        "photo": ""
-    }
-]
+export default function Partners() {
+  
 
-const Partners = (/*need to figure out how to point PartnersList to 
-feed PhotoGallery*/ ) => {
   return (
-    <div className="Partners">
-      <PhotoGallery />
+    <div className="SmallGallery">
+      <h2>Programs</h2>
+      <div className="CompImg">
+        <div className="SmallPic">
+          <img src="./assets/images/SSV-1.png"
+            alt="Partner 1" 
+            style={{ width: '4', height:'6' }} /> 
+          <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"
+            >Partner 1</figcaption>
+        </div>
+        <div className="SmallPic">
+          <img src="./assets/images/SSV-1.png"
+            alt="Partner 2" 
+            style={{ width: '4', height:'6' }} /> 
+          <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"
+            >Partner 2</figcaption>
+        </div>
+        <div className="SmallPic">
+          <img src="./assets/images/SSV-1.png"
+            alt="Partner 3" 
+            style={{ width: '4', height:'6' }} 
+            href="https://www.basketballvictoria.com.au/about/annual-reports"
+            /> 
+          <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"
+            >Partner 3</figcaption>
+        </div>
+        <div className="SmallPic">
+          <img src="./SSV-1.png"
+            alt="Partner 4" 
+            style={{ width: '4', height:'6' }} /> 
+          <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"
+            >Partner 4</figcaption>
+        </div>
+      </div>
     </div>
   );
-};
-  
-export default Partners;
+}
+
+const photos = [
+  {
+    src: "/assets/images/SSV-1.png",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/assets/images/SSV-1.png",
+    width: 1,
+    height: 1
+  },
+  {
+    src: "/assets/images/SSV-1.png",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/assets/images/SSV-1.png",
+    width: 4,
+    height: 3
+  }
+];

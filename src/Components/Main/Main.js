@@ -1,5 +1,6 @@
 import React from "react";
-import LetsPlay from "./LetsPlay"
+import './Main.css'
+import Players from './Players';
 import Competitions from "./Competitions";
 // NEED TO FIGURE OUT HOW TO REUSE THE CLASS
 import Programs from "./Programs";
@@ -13,7 +14,7 @@ const Main = () => {
   const blogText = `This is a web app to provide information about the local community for locals and tourists.`; 
   return (
     <div className="Main">
-      <LetsPlay />
+      <Players />
       <Competitions /> 
       <Programs />
       <GetInvolved />
@@ -27,3 +28,7 @@ const Main = () => {
 };
 
 export default Main;
+
+/*
+<LetsPlay />
+*/
