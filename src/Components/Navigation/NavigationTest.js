@@ -7,12 +7,14 @@ import {
     Outlet,
 } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
-import "./App.css";
+import "./Navigation.css";
 import News from "./Components/News/News";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Main from "./Components/Main/Main";
 import ResourceHub from "./Components/ResourceHub/Resources";
-import { FaHome, FaInfoCircle, FaBook, FaPhone } from "react-icons/fa";
+
+// A BETTER NAVBAR EXAMPLE TO TRY
+// https://codesandbox.io/p/sandbox/react-dtyh6?file=%2Fsrc%2FNavBar.js
 
 const NavigationTest = () => {
   const [selectedNavItem, setSelectedNavItem] = useState("welcome");
@@ -72,27 +74,3 @@ const NavigationTest = () => {
   );
 }
 
-/*
-  return (
-    <div className="Navigation">
-      <ul className="NavigationMenus">
-        {navItems.map((item) => {
-          return (
-            <li
-              key={item.id}
-              onClick={() => setSelectedNavItem(item.name)}
-              className={selectedNavItem === item.name ? `activeNavItem` : ""}
-            >
-              <Link to={`#${item.name}`}>{item.title}</a>
-            </li>
-          );
-        })}
-      </ul> 
-      <div className="SearchBar">
-        <SearchBar />
-      </div>
-    </div>
-  );
-};
-
-export default NavigationTest;

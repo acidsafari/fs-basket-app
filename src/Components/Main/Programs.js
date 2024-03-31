@@ -1,33 +1,67 @@
 import React from "react";
-import PhotoGallery from "../PhotoGallery/PhotoGallery.js";
+import "./Main";
 
-const ProgramsList = [
-    {
-      "title": "Comp 1",
-      "location": "Location 1",
-      "photo": ""
-      //need to add the href the external link
-      // and the part to the function to output it too
-    },
-    {
-      "title": "Photo 2",
-      "location": "Location 2",
-      "photo": ""
-    },
-    {
-        "title": "Photo 3",
-        "location": "Location 3",
-        "photo": ""
-    }
-]
+export default function Programs() {
+  
 
-const Programs = (/*need to figure out how to point ProgramsList to 
-    feed PhotoGallery*/ ) => {
   return (
-    <div className="Programs">
-      <PhotoGallery />
+    <div className="SmallGallery">
+      <h2>Programs</h2>
+      <div className="CompImg">
+        <div className="SmallPic">
+          <img src="./assets/images/SSV-1.png"
+            alt="Program 1" 
+            style={{ width: '4', height:'6' }} /> 
+          <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"
+            >Prog Image 1</figcaption>
+        </div>
+        <div className="SmallPic">
+          <img src="./assets/images/SSV-1.png"
+            alt="Program 2" 
+            style={{ width: '4', height:'6' }} /> 
+          <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"
+            >Prog Image 2</figcaption>
+        </div>
+        <div className="SmallPic">
+          <img src="./assets/images/SSV-1.png"
+            alt="Program 3" 
+            style={{ width: '4', height:'6' }} 
+            href="https://www.basketballvictoria.com.au/about/annual-reports"
+            /> 
+          <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"
+            >Prog Image 3</figcaption>
+        </div>
+        <div className="SmallPic">
+          <img src="./SSV-1.png"
+            alt="Program 4" 
+            style={{ width: '4', height:'6' }} /> 
+          <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"
+            >Prog Image 4</figcaption>
+        </div>
+      </div>
     </div>
   );
-};
-  
-export default Programs;
+}
+
+const photos = [
+  {
+    src: "/assets/images/SSV-1.png",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/assets/images/SSV-1.png",
+    width: 1,
+    height: 1
+  },
+  {
+    src: "/assets/images/SSV-1.png",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "/assets/images/SSV-1.png",
+    width: 4,
+    height: 3
+  }
+];
