@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 
 function SubscribeTest() {
@@ -23,72 +22,45 @@ function SubscribeTest() {
 
   return (
     <div className="Subscribe">
-            <h2>Subscribe
-                <br/>to our newsletter</h2>
+            <h2>Like our news?
+                <br/>Subscribe to our newsletter</h2>
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3">
-        <Form.Group as={Col} md="4" controlId="validationCustom01">
+        <Form.Group as={Col} md="4" controlId="validationCustom01"
+          className="Form1" >
           <Form.Label>First name</Form.Label>
           <Form.Control
             required
             type="text"
             placeholder="First name"
           />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
-        <Form.Group as={Col} md="4" controlId="validationCustom02">
+        <Form.Group as={Col} md="4" controlId="validationCustom02"
+          className="Form1" >
           <Form.Label>Last name</Form.Label>
           <Form.Control
             required
             type="text"
             placeholder="Last name"
           />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-        </Form.Group>
-        <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-          <Form.Label>Username</Form.Label>
-          <InputGroup hasValidation>
-            <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-            <Form.Control
-              type="text"
-              placeholder="Username"
-              aria-describedby="inputGroupPrepend"
-              required
-            />
-            <Form.Control.Feedback type="invalid">
-              Please choose a username.
-            </Form.Control.Feedback>
-          </InputGroup>
         </Form.Group>
       </Row>
       <Row className="mb-3">
-        <Form.Group as={Col} md="6" controlId="validationCustom03">
-          <Form.Label>City</Form.Label>
-          <Form.Control type="text" placeholder="City" required />
-          <Form.Control.Feedback type="invalid">
-            Please provide a valid city.
-          </Form.Control.Feedback>
+        <Form.Group as={Col} md="6" controlId="validationCustom03"
+          className="Form1" >
+          <Form.Label>email</Form.Label>
+          <Form.Control type="email" placeholder="email address" required />
         </Form.Group>
-        <Form.Group as={Col} md="3" controlId="validationCustom04">
-          <Form.Label>State</Form.Label>
-          <Form.Control type="text" placeholder="State" required />
-          <Form.Control.Feedback type="invalid">
-            Please provide a valid state.
-          </Form.Control.Feedback>
-        </Form.Group>
-        <Form.Group as={Col} md="3" controlId="validationCustom05">
-          <Form.Label>Zip</Form.Label>
-          <Form.Control type="text" placeholder="Zip" required />
-          <Form.Control.Feedback type="invalid">
-            Please provide a valid zip.
-          </Form.Control.Feedback>
+        <Form.Group as={Col} md="3" controlId="validationCustom04"
+          className="Form1" >
+          <Form.Label>Postcode</Form.Label>
+          <Form.Control type="text" placeholder="Postcode" required />
         </Form.Group>
       </Row>
       <Form.Group className="mb-3">
         <Form.Check
           required
           label="Agree to terms and conditions"
-          feedback="You must agree before submitting."
           feedbackType="invalid"
         />
       </Form.Group>
@@ -97,39 +69,5 @@ function SubscribeTest() {
     </div>
   );
 }
-/*
-export default FormExample;
 
-const Subscribe = () => {
-    return (
-        <div className="Subscribe">
-            <h2>Subscribe
-                <br/>to our newsletter</h2>
-            <form method="post">
-                <label for="name">Name </label>
-                <input type="text" title="name" 
-                    placeholder="Enter your name" required />
-                    <br/>
-                <label for="surname">Surname </label>
-                    <input type="text" title="surname" 
-                        placeholder="Enter your surname" required />
-                        <br />
-                    <label for="email">Email </label>
-                    <input type="email" title="email" 
-                        placeholder="Enter your email" required />
-                        <br/>
-                    <label for="postcode">Postcode </label>
-                    <input type="text" title="postcode" 
-                        placeholder="Enter your postcode" required />
-                        <br />
-                        <br/>
-                    <label for="newsletter">Please send me the newsletter </label>
-                    <input type="submit" value="Subscribe">
-                        </input>
-                    <br />
-            </form>
-        </div>
-    );
-};
-*/
 export default SubscribeTest;

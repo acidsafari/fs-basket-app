@@ -4,7 +4,8 @@ import "./Subscribe.css";
 const Subscribe = () => {
     return (
         <div className="Subscribe">
-            <h2>Newsletter</h2>
+            <h2>Like our news?
+                <br/>Subscribe to our newsletter</h2>
             <form method="post">
                 <label for="name">Name </label>
                 <input type="text" title="name" 
