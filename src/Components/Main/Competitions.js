@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import "./Main";
+import NBL from "./NBL.png";
 
 export default function Competitions() {
   
@@ -9,21 +10,21 @@ export default function Competitions() {
       <h2>Competitions</h2>
       <div className="CompImg">
         <div className="SmallPic">
-          <img src="./assets/images/NBL.png"
+          <img src={NBL}
             alt="League 1" 
             style={{ width: '60px', height:'40px' }} /> 
           <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"
             >Comp Image 1</figcaption>
         </div>
         <div className="SmallPic">
-          <img src="./assets/images/NBL.png"
+          <img src="../assets/images/NBL.png"
             alt="League 2" 
             style={{ width: '60px', height:'40px' }} /> 
           <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"
             >Comp Image 2</figcaption>
         </div>
         <div className="SmallPic">
-          <img src="./assets/images/NBL.png"
+          <img src="../assets/images/NBL.png"
             alt="League 3" 
             style={{ width: '60px', height:'40px' }} 
             href="https://www.basketballvictoria.com.au/about/annual-reports"
@@ -32,7 +33,7 @@ export default function Competitions() {
             >Comp Image 3</figcaption>
         </div>
         <div className="SmallPic">
-          <img src="/NBL.png"
+          <img src="./NBL.png"
             alt="League 4" 
             style={{ width: '60px', height:'40px' }} /> 
           <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"

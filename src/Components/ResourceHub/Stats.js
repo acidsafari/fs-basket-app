@@ -1,9 +1,10 @@
 import React from 'react';
+import './ResourceHub.css';
 
 const Stats = () => {
     return (
         <div className="Stats">
-            <h3>Stats</h3>
+            <h2>Stats</h2>
         </div>
     );
 };

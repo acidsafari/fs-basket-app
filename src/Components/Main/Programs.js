@@ -1,5 +1,6 @@
 import React from "react";
 import "./Main";
+import SSV1 from "./SSV1.png";
 
 export default function Programs() {
   
@@ -9,9 +10,9 @@ export default function Programs() {
       <h2>Programs</h2>
       <div className="CompImg">
         <div className="SmallPic">
-          <img src="./assets/images/SSV-1.png"
+          <img src={SSV1}
             alt="Program 1" 
-            style={{ width: '4', height:'6' }} /> 
+            style={{ width: '40px', height:'40px' }} /> 
           <figcaption href="https://www.basketballvictoria.com.au/about/annual-reports"
             >Prog Image 1</figcaption>
         </div>

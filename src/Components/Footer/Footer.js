@@ -1,5 +1,6 @@
 import React from "react";
 import ContactUs from "./ContactUs";
+import './Footer.css';
 
 const Footer = () => {
   return (
