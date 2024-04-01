@@ -1,9 +1,10 @@
 import React from 'react';
+import './ResourceHub.css';
 
 const Resources = () => {
     return (
         <div className="Resources">
-            <h3>Resources</h3>
+            <h2>Resources</h2>
         </div>
     );
 };
